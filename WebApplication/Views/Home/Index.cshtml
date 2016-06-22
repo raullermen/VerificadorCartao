@@ -1,0 +1,11 @@
+﻿@using WebApplication.Entities
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">Clique no botão abaixo para verificar cartões.</p>
+    @Html.ActionLink("Verificar cartões", "VerifyCreditCard", "Home", null , new { @class = "btn btn-primary btn-lg" })
+</div>
